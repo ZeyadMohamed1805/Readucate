@@ -1,26 +1,9 @@
 "use client";
 
-import { useRef } from "react";
 import Image from "next/image";
-import {
-	Box,
-	Container,
-	Flex,
-	Switch,
-	Drawer,
-	Button,
-	DrawerOverlay,
-	DrawerContent,
-	DrawerCloseButton,
-	DrawerFooter,
-	useDisclosure,
-} from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { Box, Container, Flex, Switch } from "@chakra-ui/react";
 
 const Header = () => {
-	const { isOpen, onOpen, onClose } = useDisclosure();
-	const btnRef = useRef<any>();
-
 	return (
 		<Box as="header">
 			<Container as={"nav"} variant={"wrapper-custom"}>
@@ -38,7 +21,7 @@ const Header = () => {
 						height={24}
 						alt="Logo"
 					/>
-					<Switch size={"lg"} />
+					<Switch size={"lg"} colorScheme="purple" />
 				</Flex>
 			</Container>
 		</Box>
