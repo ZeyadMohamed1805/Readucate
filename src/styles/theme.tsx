@@ -2,6 +2,14 @@ import { extendTheme, ThemeOverride } from "@chakra-ui/react";
 
 const theme: ThemeOverride = extendTheme({
 	components: {
+		Container: {
+			variants: {
+				"wrapper-custom": {
+					maxW: "1400px",
+					width: "100%",
+				},
+			},
+		},
 		Heading: {
 			variants: {
 				"h1-custom": {
@@ -19,10 +27,12 @@ const theme: ThemeOverride = extendTheme({
 			},
 		},
 		Text: {
-			defaultProps: {
-				fontSize: "16px",
-				fontWeight: 400,
-				color: "#667085",
+			variants: {
+				"text-custom": {
+					fontSize: "16px",
+					fontWeight: 400,
+					color: "#667085",
+				},
 			},
 		},
 		Button: {
