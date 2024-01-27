@@ -13,8 +13,9 @@ const theme: ThemeOverride = extendTheme({
 		Heading: {
 			variants: {
 				"h1-custom": {
-					fontSize: "60px",
+					fontSize: ["60px", "80px", "100px"],
 					fontWeight: 700,
+					lineHeight: "100%",
 				},
 				"h2-custom": {
 					fontSize: "36px",
@@ -40,6 +41,7 @@ const theme: ThemeOverride = extendTheme({
 				"primary-cta": {
 					backgroundColor: "#7F56D9",
 					color: "#F9F5FF",
+					border: "solid 2px #7F56D9",
 					_hover: {
 						opacity: 0.75,
 					},
@@ -47,6 +49,7 @@ const theme: ThemeOverride = extendTheme({
 				"secondary-cta": {
 					backgroundColor: "#F9F5FF",
 					color: "#7F56D9",
+					border: "solid 2px #7F56D9",
 					_hover: {
 						opacity: 0.75,
 					},

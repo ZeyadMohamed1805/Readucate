@@ -18,7 +18,7 @@ export default function RootLayout({ children }: RootLayoutPropsType) {
 			<body className={inter.className}>
 				<Providers>
 					<Header />
-					{children}
+					<main>{children}</main>
 				</Providers>
 			</body>
 		</html>

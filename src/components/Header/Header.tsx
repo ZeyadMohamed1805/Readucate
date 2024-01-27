@@ -5,7 +5,14 @@ import { Box, Container, Flex, Switch } from "@chakra-ui/react";
 
 const Header = () => {
 	return (
-		<Box as="header">
+		<Box
+			as="header"
+			sx={{
+				position: "absolute",
+				top: 0,
+				width: "full",
+			}}
+		>
 			<Container as={"nav"} variant={"wrapper-custom"}>
 				<Flex
 					sx={{
@@ -17,8 +24,8 @@ const Header = () => {
 				>
 					<Image
 						src={"/logo.svg"}
-						width={131}
-						height={24}
+						width={131 * 1.5}
+						height={24 * 1.5}
 						alt="Logo"
 					/>
 					<Switch size={"lg"} colorScheme="purple" />
