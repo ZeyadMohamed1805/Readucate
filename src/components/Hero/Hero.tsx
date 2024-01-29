@@ -12,7 +12,7 @@ const Hero = () => {
 		<Box
 			as="section"
 			sx={{
-				bg: `url("/hero.jpg") no-repeat center`,
+				bg: `url("/hero.svg") no-repeat center`,
 				bgSize: "cover",
 				h: "100vh",
 				display: "flex",

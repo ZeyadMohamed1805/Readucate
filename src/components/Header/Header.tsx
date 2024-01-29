@@ -24,8 +24,8 @@ const Header = () => {
 				>
 					<Image
 						src={"/logo.svg"}
-						width={131 * 1.5}
-						height={24 * 1.5}
+						width={165}
+						height={30}
 						alt="Logo"
 					/>
 					<Switch size={"lg"} colorScheme="purple" />

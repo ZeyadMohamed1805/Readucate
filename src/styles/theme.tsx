@@ -56,6 +56,17 @@ const theme: ThemeOverride = extendTheme({
 				},
 			},
 		},
+		Badge: {
+			variants: {
+				"badge-custom": {
+					padding: "2px 10px",
+					borderRadius: "16px",
+					fontSize: "14px",
+					fontWeight: 600,
+					textTransform: "capitalize",
+				},
+			},
+		},
 	},
 });
 
