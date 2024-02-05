@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Providers from "@/providers/providers";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 import { RootLayoutPropsType } from "@/types/types";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: RootLayoutPropsType) {
 				<Providers>
 					<Header />
 					<main>{children}</main>
+					<Footer />
 				</Providers>
 			</body>
 		</html>
